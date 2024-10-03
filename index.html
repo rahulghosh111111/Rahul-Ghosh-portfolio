@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Ghosh</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d5c87a6361.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/name.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi,My Name is <span>Rahul Ghosh</span><br>I'm a <span id="element"></span></h1>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------about------------------>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p><span id="element1"></span></p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab " id="skills">
+                        <ul>
+                            <li><span>DSA</span><br>C,Java,JavaScript</li>
+                            <li><span>Web Development</span><br>HTML,CSS,JavaScript,TailwindCSS,React.js</li>
+                            <li><span>Database</span><br>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-2026</span><br>Started B.Tech from KIIT University</li>
+                            <li><span>2023-2024</span><br>Web development(Front-end)</li>
+                            <li><span>2023-Now</span><br>Participating multiple Hackathons</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2022-26</span><br>B.Tech from KIIT University</li>
+                            <li><span>2023-24</span><br>Web development</li>
+                            <li><span>2024-present</span><br>Building and developing websites and Participating multiple Hackathons</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------services------------------- -->
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div >
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Problem Solving</h2>
+                    <p>DSA Problem Solving | Enhancing Algorithmic Thinking through LeetCode.Click on " Learn more " to visit my Leetcode Profile.</p>
+                        <br><a href="https://leetcode.com/u/Rahul_official/"><b>Learn More</b></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-web-awesome"></i>
+                    <h2>Web Development</h2>
+                    <p>I am a professional web developer. I can provide clean code of creating website. I also make the
+                        website more & more interactive with web animations. You can connect me through my Linkedin profile.</h2>
+                        <br><a href="https://www.linkedin.com/in/rahul-ghosh-b0b660254/"><b>Learn More</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------portfolio------------------------? -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img  src="image/work-1.jpg">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>Welcome to my Personal portfolio! This collection reflex my journey,skills and accomplishments in my field/industry.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img  src="image/work-2.jpg">
+                    <div class="layer">
+                        <h3>GitHub</h3>
+                        <p>I'm a frontend developer passionate about crafting beautiful and intuitive web interfaces. My GitHub is a showcase of my work with modern frontend technologies, where I love to experiment with new designs, frameworks, and approaches to delivering seamless user experiences.</p>
+                        <a href="https://github.com/rahulghosh111111"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./image/work-3.png">
+                    <div class="layer">
+                        <h3>Linkedin</h3>
+                        <p>Here you will find my LinkedIn profile.
+                        </p>
+                        <a href="https://www.linkedin.com/in/rahul-ghosh-b0b660254/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.facebook.com/rahul89123" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-- -----------------contact--------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="far fa-paper-plane"></i>rahulghosh111111@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 9749000371</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/rahul89123?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/rahulghosh_unofficial?igsh=MXU5ZTF0YW41c24zOA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rahul-ghosh-b0b660254/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/rahulghosh111111"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="image/cv example.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Rahul Ghosh. All rights reserved. <i>Made with ❤️</i>
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
